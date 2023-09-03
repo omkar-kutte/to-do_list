@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo-app">
+        <h2>To-Do List <img src="images/to-do list icon.png" /></h2>
+        <div class="row">
+          <input type="text" id="input-box" placeholder="Add new task..." />
+          <button onclick="addTask()">Add</button>
+        </div>
+        <ul id="list-container">
+          <!-- <li class="checked">Task 1</li>
+          <li class="unchecked">Task 2</li>
+          <li>Task 3</li> -->
+        </ul>
+        <div class="counter">
+          <div class="task-counter">
+            Total Tasks
+            <span id="total-tasks">0</span>
+          </div>
+          <div class="completed-counter">
+            Completed
+            <span id="completed-tasks">0</span>
+          </div>
+          <div class="uncompleted-counter">
+            Uncompleted
+            <span id="uncompleted-tasks">0</span>
+          </div>
+        </div>
+        <div class="delete-all">
+          <button class="clear-all">Delete All</button>
+          <!-- <input type="button" value="Remove All" onclick="removeAll()"> -->
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
